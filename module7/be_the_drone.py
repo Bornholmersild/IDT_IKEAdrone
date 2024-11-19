@@ -10,6 +10,7 @@ from rdp import *
 import numpy as np
 from route_plan_exporter import RoutePlanExporter
 from course_materials.hermite import cubic_hermite_spline
+from scipy.stats import median_abs_deviation
 
 class DataConversion:
 	def __init__(self):
@@ -238,7 +239,117 @@ class RouteSimplifier:
 
 		# Display the plots
 		plt.show()
+class DronePathCleaner:
+    def remove_outliers(self, e_adj, n_adj):
+        """
+        Remove outliers from drone flight path using UTM coordinates.
+        
+        Args:
+            e_adj: List of adjusted easting coordinates
+            n_adj: List of adjusted northing coordinates
+            
+        Returns:
+            e_cleaned, n_cleaned: Lists of cleaned easting and northing coordinates
+        """
+        if len(e_adj) < 3:
+            return e_adj, n_adj
+            
+        import numpy as np
+        from scipy.stats import median_abs_deviation
+        
+        # Combine coordinates into points array
+        points = np.column_stack([e_adj, n_adj])
+        
+        # Calculate distances between consecutive points
+        distances = np.sqrt(np.sum(np.diff(points, axis=0)**2, axis=1))
+        
+        # Use rolling window statistics to detect local outliers
+        window_size = min(20, len(distances) // 5)  # Adaptive window size
+        
+        # Initialize mask for keeping points
+        keep_mask = np.ones(len(points), dtype=bool)
+        
+        # Analyze each point in its local context
+        for i in range(1, len(points) - 1):
+            # Get local window indices
+            start_idx = max(0, i - window_size)
+            end_idx = min(len(distances), i + window_size)
+            
+            # Get local statistics
+            local_distances = distances[start_idx:end_idx]
+            local_median = np.median(local_distances)
+            local_mad = median_abs_deviation(local_distances)
+            
+            # Adaptive threshold based on local variation
+            threshold = local_median + 3 * local_mad
+            
+            # Check if current point is an outlier
+            if distances[i-1] > threshold:  # Check distance to previous point
+                # Before marking as outlier, verify it's not part of a valid maneuver
+                prev_pt = points[i-1]
+                curr_pt = points[i]
+                next_pt = points[i+1]
+                
+                # Calculate vectors
+                vec1 = curr_pt - prev_pt
+                vec2 = next_pt - curr_pt
+                
+                # Check if movement is roughly consistent
+                cos_angle = np.dot(vec1, vec2) / (np.linalg.norm(vec1) * np.linalg.norm(vec2))
+                angle = np.arccos(np.clip(cos_angle, -1.0, 1.0))
+                
+                # If the angle is large (sudden direction change) and distance is very large,
+                # mark as outlier
+                if angle > np.pi/3 and distances[i-1] > threshold * 1.5:  # 60 degrees
+                    keep_mask[i] = False
+        
+        # Always keep first and last points
+        keep_mask[0] = True
+        keep_mask[-1] = True
+        
+        # If we're removing too many points, it might be a valid high-speed section
+        if np.sum(keep_mask) < len(points) * 0.7:
+            return e_adj, n_adj
+            
+        # Separate cleaned coordinates back into e and n
+        cleaned_points = points[keep_mask]
+        e_cleaned = cleaned_points[:, 0]
+        n_cleaned = cleaned_points[:, 1]
+        
+        return e_cleaned, n_cleaned
 
+    def plot_cleaning_results(self, e_adj, n_adj, e_cleaned, n_cleaned):
+        """
+        Visualize the original and cleaned paths
+        """
+        import matplotlib.pyplot as plt
+        
+        plt.figure(figsize=(12, 6))
+        
+        # Plot original path
+        plt.plot(e_adj, n_adj, 'b.--', label='Original Path', alpha=0.5)
+        
+        # Plot cleaned path
+        plt.plot(e_cleaned, n_cleaned, 'r.-', label='Cleaned Path', linewidth=2)
+        
+        # Find and highlight removed points
+        import numpy as np
+        orig_points = np.column_stack([e_adj, n_adj])
+        clean_points = np.column_stack([e_cleaned, n_cleaned])
+        removed_mask = ~np.isin(orig_points, clean_points).all(axis=1)
+        removed_points = orig_points[removed_mask]
+        
+        if len(removed_points) > 0:
+            plt.plot(removed_points[:, 0], removed_points[:, 1], 'kx',
+                    label='Removed Points', markersize=10)
+        
+        plt.title('Drone Flight Path Cleaning Results')
+        plt.xlabel('UTM Easting')
+        plt.ylabel('UTM Northing')
+        plt.legend()
+        plt.axis('equal')
+        plt.grid(True)
+        plt.show()
 
 def main():
 	'''
@@ -251,7 +362,7 @@ def main():
 	e_adj, n_adj = utm.utm_reference_coordinates(e, n)		# Generate path with outliers
 	utm_waypoints = [e_adj, n_adj]											# A list of UTM coorinates
 	
-	''' Adding random noise for outliers
+	#Adding random noise for outliers
 	for i in range(50):
 		e_adj[random.randint(0,1100)] = e_adj[random.randint(0,1100)] + random.random()
 
@@ -260,7 +371,7 @@ def main():
 	plt.axis('equal')
 	plt.show()
 
-	fig = plt.figure(1)
+	'''fig = plt.figure(1)
 	ax = fig.add_subplot(111, projection='3d')
 	ax.scatter(e_adj, n_adj, alt_adj, label="lat_back, lon_back, alt", color='r')
 	ax.set_xlabel('Latitude')
@@ -269,12 +380,19 @@ def main():
 	ax.set_title("Figure 1: lat_back vs lat, lon_back vs lon")
 	ax.legend()
 	plt.show()'''
-
 	'''
 	Exercise 4.3 - Remove outliers
 	'''
-	# REMOVE OUTLIERS FUNCTION CALL
 
+	# REMOVE OUTLIERS FUNCTION CALL
+	# Create cleaner instance
+	cleaner = DronePathCleaner()
+    
+    # Remove outliers
+	e_cleaned, n_cleaned = cleaner.remove_outliers(e_adj, n_adj)
+
+    # Plot results
+	cleaner.plot_cleaning_results(e_adj, n_adj, e_cleaned, n_cleaned)
 	'''
 	Exercise 4.4 - Simplify the track
 		1. maximum waypoints allowed.
