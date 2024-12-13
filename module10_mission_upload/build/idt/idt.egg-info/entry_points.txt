@@ -1,0 +1,5 @@
+[console_scripts]
+get_global_pos = idt.get_global_pos:main
+hello_drone = idt.hello_drone:main
+upload_mission = idt.upload_mission:main
+

@@ -1,0 +1,48 @@
+[0.912s] Invoking command in '/home/mat/Downloads/course_materials/idt_ros2_nodes/src/idt': PYTHONPATH=/home/mat/Downloads/course_materials/idt_ros2_nodes/build/idt/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mat/Downloads/course_materials/idt_ros2_nodes/install/idt/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/idt build --build-base /home/mat/Downloads/course_materials/idt_ros2_nodes/build/idt/build install --record /home/mat/Downloads/course_materials/idt_ros2_nodes/build/idt/install.log --single-version-externally-managed install_data
+[1.272s] running egg_info
+[1.272s] creating ../../build/idt/idt.egg-info
+[1.272s] writing ../../build/idt/idt.egg-info/PKG-INFO
+[1.273s] writing dependency_links to ../../build/idt/idt.egg-info/dependency_links.txt
+[1.273s] writing entry points to ../../build/idt/idt.egg-info/entry_points.txt
+[1.273s] writing requirements to ../../build/idt/idt.egg-info/requires.txt
+[1.273s] writing top-level names to ../../build/idt/idt.egg-info/top_level.txt
+[1.273s] writing manifest file '../../build/idt/idt.egg-info/SOURCES.txt'
+[1.275s] reading manifest file '../../build/idt/idt.egg-info/SOURCES.txt'
+[1.276s] writing manifest file '../../build/idt/idt.egg-info/SOURCES.txt'
+[1.277s] running build
+[1.277s] running build_py
+[1.277s] creating /home/mat/Downloads/course_materials/idt_ros2_nodes/build/idt/build
+[1.277s] creating /home/mat/Downloads/course_materials/idt_ros2_nodes/build/idt/build/lib
+[1.277s] creating /home/mat/Downloads/course_materials/idt_ros2_nodes/build/idt/build/lib/idt
+[1.277s] copying idt/rssi_logger.py -> /home/mat/Downloads/course_materials/idt_ros2_nodes/build/idt/build/lib/idt
+[1.277s] copying idt/get_global_pos.py -> /home/mat/Downloads/course_materials/idt_ros2_nodes/build/idt/build/lib/idt
+[1.277s] copying idt/hello_drone.py -> /home/mat/Downloads/course_materials/idt_ros2_nodes/build/idt/build/lib/idt
+[1.277s] copying idt/__init__.py -> /home/mat/Downloads/course_materials/idt_ros2_nodes/build/idt/build/lib/idt
+[1.278s] copying idt/get_radio_rssi.py -> /home/mat/Downloads/course_materials/idt_ros2_nodes/build/idt/build/lib/idt
+[1.278s] running install
+[1.278s] running install_lib
+[1.279s] creating /home/mat/Downloads/course_materials/idt_ros2_nodes/install/idt/lib/python3.10/site-packages/idt
+[1.279s] copying /home/mat/Downloads/course_materials/idt_ros2_nodes/build/idt/build/lib/idt/rssi_logger.py -> /home/mat/Downloads/course_materials/idt_ros2_nodes/install/idt/lib/python3.10/site-packages/idt
+[1.279s] copying /home/mat/Downloads/course_materials/idt_ros2_nodes/build/idt/build/lib/idt/get_global_pos.py -> /home/mat/Downloads/course_materials/idt_ros2_nodes/install/idt/lib/python3.10/site-packages/idt
+[1.280s] copying /home/mat/Downloads/course_materials/idt_ros2_nodes/build/idt/build/lib/idt/hello_drone.py -> /home/mat/Downloads/course_materials/idt_ros2_nodes/install/idt/lib/python3.10/site-packages/idt
+[1.280s] copying /home/mat/Downloads/course_materials/idt_ros2_nodes/build/idt/build/lib/idt/__init__.py -> /home/mat/Downloads/course_materials/idt_ros2_nodes/install/idt/lib/python3.10/site-packages/idt
+[1.280s] copying /home/mat/Downloads/course_materials/idt_ros2_nodes/build/idt/build/lib/idt/get_radio_rssi.py -> /home/mat/Downloads/course_materials/idt_ros2_nodes/install/idt/lib/python3.10/site-packages/idt
+[1.280s] byte-compiling /home/mat/Downloads/course_materials/idt_ros2_nodes/install/idt/lib/python3.10/site-packages/idt/rssi_logger.py to rssi_logger.cpython-310.pyc
+[1.281s] byte-compiling /home/mat/Downloads/course_materials/idt_ros2_nodes/install/idt/lib/python3.10/site-packages/idt/get_global_pos.py to get_global_pos.cpython-310.pyc
+[1.282s] byte-compiling /home/mat/Downloads/course_materials/idt_ros2_nodes/install/idt/lib/python3.10/site-packages/idt/hello_drone.py to hello_drone.cpython-310.pyc
+[1.283s] byte-compiling /home/mat/Downloads/course_materials/idt_ros2_nodes/install/idt/lib/python3.10/site-packages/idt/__init__.py to __init__.cpython-310.pyc
+[1.283s] byte-compiling /home/mat/Downloads/course_materials/idt_ros2_nodes/install/idt/lib/python3.10/site-packages/idt/get_radio_rssi.py to get_radio_rssi.cpython-310.pyc
+[1.283s] running install_data
+[1.284s] creating /home/mat/Downloads/course_materials/idt_ros2_nodes/install/idt/share/ament_index
+[1.284s] creating /home/mat/Downloads/course_materials/idt_ros2_nodes/install/idt/share/ament_index/resource_index
+[1.284s] creating /home/mat/Downloads/course_materials/idt_ros2_nodes/install/idt/share/ament_index/resource_index/packages
+[1.284s] copying resource/idt -> /home/mat/Downloads/course_materials/idt_ros2_nodes/install/idt/share/ament_index/resource_index/packages
+[1.284s] copying package.xml -> /home/mat/Downloads/course_materials/idt_ros2_nodes/install/idt/share/idt
+[1.284s] running install_egg_info
+[1.286s] Copying ../../build/idt/idt.egg-info to /home/mat/Downloads/course_materials/idt_ros2_nodes/install/idt/lib/python3.10/site-packages/idt-0.1.0-py3.10.egg-info
+[1.287s] running install_scripts
+[1.314s] Installing get_global_pos script to /home/mat/Downloads/course_materials/idt_ros2_nodes/install/idt/lib/idt
+[1.314s] Installing get_radio_rssi script to /home/mat/Downloads/course_materials/idt_ros2_nodes/install/idt/lib/idt
+[1.314s] Installing hello_drone script to /home/mat/Downloads/course_materials/idt_ros2_nodes/install/idt/lib/idt
+[1.314s] writing list of installed files to '/home/mat/Downloads/course_materials/idt_ros2_nodes/build/idt/install.log'
+[1.341s] Invoked command in '/home/mat/Downloads/course_materials/idt_ros2_nodes/src/idt' returned '0': PYTHONPATH=/home/mat/Downloads/course_materials/idt_ros2_nodes/build/idt/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mat/Downloads/course_materials/idt_ros2_nodes/install/idt/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/idt build --build-base /home/mat/Downloads/course_materials/idt_ros2_nodes/build/idt/build install --record /home/mat/Downloads/course_materials/idt_ros2_nodes/build/idt/install.log --single-version-externally-managed install_data

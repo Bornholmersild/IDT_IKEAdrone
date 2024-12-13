@@ -1,0 +1,126 @@
+[0.102s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.102s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x774efc5943a0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x774efc6a96c0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x774efc6a96c0>>, mixin_verb=('build',))
+[0.255s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.255s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.255s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.255s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.255s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.255s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.255s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/mat/Downloads/course_materials/idt_ros2_nodes'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/idt) by extensions ['ignore', 'ignore_ament_install']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/idt) by extension 'ignore'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/idt) by extension 'ignore_ament_install'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/idt) by extensions ['colcon_pkg']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/idt) by extension 'colcon_pkg'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/idt) by extensions ['colcon_meta']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/idt) by extension 'colcon_meta'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/idt) by extensions ['ros']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/idt) by extension 'ros'
+[0.267s] DEBUG:colcon.colcon_core.package_identification:Package 'src/idt' with type 'ros.ament_python' and name 'idt'
+[0.267s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.267s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.267s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.267s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.267s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.290s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.290s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.292s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 401 installed packages in /opt/ros/humble
+[0.294s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'idt' build argument 'cmake_args' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'idt' build argument 'cmake_target' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'idt' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'idt' build argument 'cmake_clean_cache' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'idt' build argument 'cmake_clean_first' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'idt' build argument 'cmake_force_configure' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'idt' build argument 'ament_cmake_args' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'idt' build argument 'catkin_cmake_args' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'idt' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.334s] DEBUG:colcon.colcon_core.verb:Building package 'idt' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mat/Downloads/course_materials/idt_ros2_nodes/build/idt', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mat/Downloads/course_materials/idt_ros2_nodes/install/idt', 'merge_install': False, 'path': '/home/mat/Downloads/course_materials/idt_ros2_nodes/src/idt', 'symlink_install': False, 'test_result_base': None}
+[0.334s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.335s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.335s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/mat/Downloads/course_materials/idt_ros2_nodes/src/idt' with build type 'ament_python'
+[0.335s] Level 1:colcon.colcon_core.shell:create_environment_hook('idt', 'ament_prefix_path')
+[0.337s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.337s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mat/Downloads/course_materials/idt_ros2_nodes/install/idt/share/idt/hook/ament_prefix_path.ps1'
+[0.337s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mat/Downloads/course_materials/idt_ros2_nodes/install/idt/share/idt/hook/ament_prefix_path.dsv'
+[0.338s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mat/Downloads/course_materials/idt_ros2_nodes/install/idt/share/idt/hook/ament_prefix_path.sh'
+[0.338s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.338s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.568s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/mat/Downloads/course_materials/idt_ros2_nodes/src/idt'
+[0.568s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.568s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.889s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mat/Downloads/course_materials/idt_ros2_nodes/src/idt': PYTHONPATH=/home/mat/Downloads/course_materials/idt_ros2_nodes/build/idt/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mat/Downloads/course_materials/idt_ros2_nodes/install/idt/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/idt build --build-base /home/mat/Downloads/course_materials/idt_ros2_nodes/build/idt/build install --record /home/mat/Downloads/course_materials/idt_ros2_nodes/build/idt/install.log --single-version-externally-managed install_data
+[1.139s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mat/Downloads/course_materials/idt_ros2_nodes/src/idt' returned '0': PYTHONPATH=/home/mat/Downloads/course_materials/idt_ros2_nodes/build/idt/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mat/Downloads/course_materials/idt_ros2_nodes/install/idt/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/idt build --build-base /home/mat/Downloads/course_materials/idt_ros2_nodes/build/idt/build install --record /home/mat/Downloads/course_materials/idt_ros2_nodes/build/idt/install.log --single-version-externally-managed install_data
+[1.142s] Level 1:colcon.colcon_core.environment:checking '/home/mat/Downloads/course_materials/idt_ros2_nodes/install/idt' for CMake module files
+[1.142s] Level 1:colcon.colcon_core.environment:checking '/home/mat/Downloads/course_materials/idt_ros2_nodes/install/idt' for CMake config files
+[1.143s] Level 1:colcon.colcon_core.environment:checking '/home/mat/Downloads/course_materials/idt_ros2_nodes/install/idt/lib'
+[1.143s] Level 1:colcon.colcon_core.environment:checking '/home/mat/Downloads/course_materials/idt_ros2_nodes/install/idt/bin'
+[1.143s] Level 1:colcon.colcon_core.environment:checking '/home/mat/Downloads/course_materials/idt_ros2_nodes/install/idt/lib/pkgconfig/idt.pc'
+[1.143s] Level 1:colcon.colcon_core.environment:checking '/home/mat/Downloads/course_materials/idt_ros2_nodes/install/idt/lib/python3.10/site-packages'
+[1.143s] Level 1:colcon.colcon_core.shell:create_environment_hook('idt', 'pythonpath')
+[1.143s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mat/Downloads/course_materials/idt_ros2_nodes/install/idt/share/idt/hook/pythonpath.ps1'
+[1.144s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mat/Downloads/course_materials/idt_ros2_nodes/install/idt/share/idt/hook/pythonpath.dsv'
+[1.144s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mat/Downloads/course_materials/idt_ros2_nodes/install/idt/share/idt/hook/pythonpath.sh'
+[1.144s] Level 1:colcon.colcon_core.environment:checking '/home/mat/Downloads/course_materials/idt_ros2_nodes/install/idt/bin'
+[1.144s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(idt)
+[1.145s] INFO:colcon.colcon_core.shell:Creating package script '/home/mat/Downloads/course_materials/idt_ros2_nodes/install/idt/share/idt/package.ps1'
+[1.145s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mat/Downloads/course_materials/idt_ros2_nodes/install/idt/share/idt/package.dsv'
+[1.146s] INFO:colcon.colcon_core.shell:Creating package script '/home/mat/Downloads/course_materials/idt_ros2_nodes/install/idt/share/idt/package.sh'
+[1.146s] INFO:colcon.colcon_core.shell:Creating package script '/home/mat/Downloads/course_materials/idt_ros2_nodes/install/idt/share/idt/package.bash'
+[1.147s] INFO:colcon.colcon_core.shell:Creating package script '/home/mat/Downloads/course_materials/idt_ros2_nodes/install/idt/share/idt/package.zsh'
+[1.147s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mat/Downloads/course_materials/idt_ros2_nodes/install/idt/share/colcon-core/packages/idt)
+[1.148s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.148s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.148s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.148s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.153s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.154s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.154s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.162s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.163s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mat/Downloads/course_materials/idt_ros2_nodes/install/local_setup.ps1'
+[1.164s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mat/Downloads/course_materials/idt_ros2_nodes/install/_local_setup_util_ps1.py'
+[1.165s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mat/Downloads/course_materials/idt_ros2_nodes/install/setup.ps1'
+[1.166s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mat/Downloads/course_materials/idt_ros2_nodes/install/local_setup.sh'
+[1.166s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mat/Downloads/course_materials/idt_ros2_nodes/install/_local_setup_util_sh.py'
+[1.167s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mat/Downloads/course_materials/idt_ros2_nodes/install/setup.sh'
+[1.167s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mat/Downloads/course_materials/idt_ros2_nodes/install/local_setup.bash'
+[1.168s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mat/Downloads/course_materials/idt_ros2_nodes/install/setup.bash'
+[1.168s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mat/Downloads/course_materials/idt_ros2_nodes/install/local_setup.zsh'
+[1.169s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mat/Downloads/course_materials/idt_ros2_nodes/install/setup.zsh'

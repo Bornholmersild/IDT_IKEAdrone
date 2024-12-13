@@ -1,0 +1,6 @@
+[console_scripts]
+get_global_pos = idt.get_global_pos:main
+get_radio_rssi = idt.get_radio_rssi:main
+hello_drone = idt.hello_drone:main
+rssi_logger = idt.rssi_logger:main
+

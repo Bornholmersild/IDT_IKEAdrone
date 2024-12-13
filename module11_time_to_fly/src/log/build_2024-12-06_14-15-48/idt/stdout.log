@@ -1,0 +1,35 @@
+running egg_info
+creating ../build/idt/idt.egg-info
+writing ../build/idt/idt.egg-info/PKG-INFO
+writing dependency_links to ../build/idt/idt.egg-info/dependency_links.txt
+writing entry points to ../build/idt/idt.egg-info/entry_points.txt
+writing requirements to ../build/idt/idt.egg-info/requires.txt
+writing top-level names to ../build/idt/idt.egg-info/top_level.txt
+writing manifest file '../build/idt/idt.egg-info/SOURCES.txt'
+reading manifest file '../build/idt/idt.egg-info/SOURCES.txt'
+writing manifest file '../build/idt/idt.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/build/idt/build
+creating /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/build/idt/build/lib
+creating /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/build/idt/build/lib/idt
+copying idt/__init__.py -> /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/build/idt/build/lib/idt
+copying idt/upload_mission.py -> /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/build/idt/build/lib/idt
+running install
+running install_lib
+creating /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/install/idt/lib/python3.8/site-packages/idt
+copying /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/build/idt/build/lib/idt/__init__.py -> /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/install/idt/lib/python3.8/site-packages/idt
+copying /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/build/idt/build/lib/idt/upload_mission.py -> /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/install/idt/lib/python3.8/site-packages/idt
+byte-compiling /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/install/idt/lib/python3.8/site-packages/idt/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/install/idt/lib/python3.8/site-packages/idt/upload_mission.py to upload_mission.cpython-38.pyc
+running install_data
+creating /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/install/idt/share/ament_index
+creating /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/install/idt/share/ament_index/resource_index
+creating /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/install/idt/share/ament_index/resource_index/packages
+copying resource/idt -> /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/install/idt/share/ament_index/resource_index/packages
+copying package.xml -> /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/install/idt/share/idt
+running install_egg_info
+Copying ../build/idt/idt.egg-info to /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/install/idt/lib/python3.8/site-packages/idt-0.1.0-py3.8.egg-info
+running install_scripts
+Installing upload_mission script to /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/install/idt/lib/idt
+writing list of installed files to '/home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/build/idt/install.log'

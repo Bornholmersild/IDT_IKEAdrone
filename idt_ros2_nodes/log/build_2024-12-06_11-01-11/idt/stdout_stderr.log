@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/idt/idt.egg-info/PKG-INFO
+writing dependency_links to ../../build/idt/idt.egg-info/dependency_links.txt
+writing entry points to ../../build/idt/idt.egg-info/entry_points.txt
+writing requirements to ../../build/idt/idt.egg-info/requires.txt
+writing top-level names to ../../build/idt/idt.egg-info/top_level.txt
+reading manifest file '../../build/idt/idt.egg-info/SOURCES.txt'
+writing manifest file '../../build/idt/idt.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/idt_ros2_nodes/install/idt/lib/python3.8/site-packages/idt-0.1.0-py3.8.egg-info' (and everything under it)
+Copying ../../build/idt/idt.egg-info to /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/idt_ros2_nodes/install/idt/lib/python3.8/site-packages/idt-0.1.0-py3.8.egg-info
+running install_scripts
+Installing get_global_pos script to /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/idt_ros2_nodes/install/idt/lib/idt
+Installing get_radio_rssi script to /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/idt_ros2_nodes/install/idt/lib/idt
+Installing hello_drone script to /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/idt_ros2_nodes/install/idt/lib/idt
+Installing rssi_logger script to /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/idt_ros2_nodes/install/idt/lib/idt
+writing list of installed files to '/home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/idt_ros2_nodes/build/idt/install.log'

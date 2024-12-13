@@ -1,0 +1,34 @@
+[0.805s] Invoking command in '/home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/idt_ros2_nodes/src/idt': PYTHONPATH=/home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/idt_ros2_nodes/build/idt/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/idt_ros2_nodes/install/idt/lib/python3.8/site-packages: _=/usr/bin/env /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/idt build --build-base /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/idt_ros2_nodes/build/idt/build install --record /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/idt_ros2_nodes/build/idt/install.log --single-version-externally-managed install_data
+[1.011s] running egg_info
+[1.011s] writing ../../build/idt/idt.egg-info/PKG-INFO
+[1.011s] writing dependency_links to ../../build/idt/idt.egg-info/dependency_links.txt
+[1.012s] writing entry points to ../../build/idt/idt.egg-info/entry_points.txt
+[1.012s] writing requirements to ../../build/idt/idt.egg-info/requires.txt
+[1.012s] writing top-level names to ../../build/idt/idt.egg-info/top_level.txt
+[1.044s] reading manifest file '../../build/idt/idt.egg-info/SOURCES.txt'
+[1.045s] writing manifest file '../../build/idt/idt.egg-info/SOURCES.txt'
+[1.045s] running build
+[1.045s] running build_py
+[1.046s] running install
+[1.046s] running install_lib
+[1.047s] creating /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/idt_ros2_nodes/install/idt/lib/python3.8/site-packages/idt
+[1.047s] copying /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/idt_ros2_nodes/build/idt/build/lib/idt/__init__.py -> /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/idt_ros2_nodes/install/idt/lib/python3.8/site-packages/idt
+[1.048s] copying /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/idt_ros2_nodes/build/idt/build/lib/idt/get_radio_rssi.py -> /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/idt_ros2_nodes/install/idt/lib/python3.8/site-packages/idt
+[1.048s] copying /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/idt_ros2_nodes/build/idt/build/lib/idt/rssi_logger.py -> /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/idt_ros2_nodes/install/idt/lib/python3.8/site-packages/idt
+[1.048s] copying /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/idt_ros2_nodes/build/idt/build/lib/idt/get_global_pos.py -> /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/idt_ros2_nodes/install/idt/lib/python3.8/site-packages/idt
+[1.048s] copying /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/idt_ros2_nodes/build/idt/build/lib/idt/hello_drone.py -> /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/idt_ros2_nodes/install/idt/lib/python3.8/site-packages/idt
+[1.048s] byte-compiling /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/idt_ros2_nodes/install/idt/lib/python3.8/site-packages/idt/__init__.py to __init__.cpython-38.pyc
+[1.049s] byte-compiling /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/idt_ros2_nodes/install/idt/lib/python3.8/site-packages/idt/get_radio_rssi.py to get_radio_rssi.cpython-38.pyc
+[1.050s] byte-compiling /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/idt_ros2_nodes/install/idt/lib/python3.8/site-packages/idt/rssi_logger.py to rssi_logger.cpython-38.pyc
+[1.050s] byte-compiling /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/idt_ros2_nodes/install/idt/lib/python3.8/site-packages/idt/get_global_pos.py to get_global_pos.cpython-38.pyc
+[1.051s] byte-compiling /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/idt_ros2_nodes/install/idt/lib/python3.8/site-packages/idt/hello_drone.py to hello_drone.cpython-38.pyc
+[1.052s] running install_data
+[1.053s] running install_egg_info
+[1.055s] Copying ../../build/idt/idt.egg-info to /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/idt_ros2_nodes/install/idt/lib/python3.8/site-packages/idt-0.1.0-py3.8.egg-info
+[1.056s] running install_scripts
+[1.072s] Installing get_global_pos script to /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/idt_ros2_nodes/install/idt/lib/idt
+[1.072s] Installing get_radio_rssi script to /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/idt_ros2_nodes/install/idt/lib/idt
+[1.072s] Installing hello_drone script to /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/idt_ros2_nodes/install/idt/lib/idt
+[1.072s] Installing rssi_logger script to /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/idt_ros2_nodes/install/idt/lib/idt
+[1.073s] writing list of installed files to '/home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/idt_ros2_nodes/build/idt/install.log'
+[1.118s] Invoked command in '/home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/idt_ros2_nodes/src/idt' returned '0': PYTHONPATH=/home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/idt_ros2_nodes/build/idt/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/idt_ros2_nodes/install/idt/lib/python3.8/site-packages: _=/usr/bin/env /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/idt build --build-base /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/idt_ros2_nodes/build/idt/build install --record /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/idt_ros2_nodes/build/idt/install.log --single-version-externally-managed install_data

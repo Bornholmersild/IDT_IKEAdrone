@@ -1,0 +1,37 @@
+[0.620s] Invoking command in '/home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/idt': PYTHONPATH=/home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/build/idt/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/install/idt/lib/python3.8/site-packages:${PYTHONPATH} _=/usr/bin/env /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/idt build --build-base /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/build/idt/build install --record /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/build/idt/install.log --single-version-externally-managed install_data
+[0.824s] running egg_info
+[0.824s] creating ../build/idt/idt.egg-info
+[0.825s] writing ../build/idt/idt.egg-info/PKG-INFO
+[0.825s] writing dependency_links to ../build/idt/idt.egg-info/dependency_links.txt
+[0.825s] writing entry points to ../build/idt/idt.egg-info/entry_points.txt
+[0.825s] writing requirements to ../build/idt/idt.egg-info/requires.txt
+[0.825s] writing top-level names to ../build/idt/idt.egg-info/top_level.txt
+[0.826s] writing manifest file '../build/idt/idt.egg-info/SOURCES.txt'
+[0.857s] reading manifest file '../build/idt/idt.egg-info/SOURCES.txt'
+[0.857s] writing manifest file '../build/idt/idt.egg-info/SOURCES.txt'
+[0.857s] running build
+[0.858s] running build_py
+[0.858s] creating /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/build/idt/build
+[0.858s] creating /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/build/idt/build/lib
+[0.858s] creating /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/build/idt/build/lib/idt
+[0.858s] copying idt/__init__.py -> /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/build/idt/build/lib/idt
+[0.858s] copying idt/upload_mission.py -> /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/build/idt/build/lib/idt
+[0.858s] running install
+[0.859s] running install_lib
+[0.859s] creating /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/install/idt/lib/python3.8/site-packages/idt
+[0.860s] copying /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/build/idt/build/lib/idt/__init__.py -> /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/install/idt/lib/python3.8/site-packages/idt
+[0.860s] copying /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/build/idt/build/lib/idt/upload_mission.py -> /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/install/idt/lib/python3.8/site-packages/idt
+[0.860s] byte-compiling /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/install/idt/lib/python3.8/site-packages/idt/__init__.py to __init__.cpython-38.pyc
+[0.861s] byte-compiling /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/install/idt/lib/python3.8/site-packages/idt/upload_mission.py to upload_mission.cpython-38.pyc
+[0.862s] running install_data
+[0.863s] creating /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/install/idt/share/ament_index
+[0.863s] creating /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/install/idt/share/ament_index/resource_index
+[0.863s] creating /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/install/idt/share/ament_index/resource_index/packages
+[0.863s] copying resource/idt -> /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/install/idt/share/ament_index/resource_index/packages
+[0.863s] copying package.xml -> /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/install/idt/share/idt
+[0.863s] running install_egg_info
+[0.864s] Copying ../build/idt/idt.egg-info to /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/install/idt/lib/python3.8/site-packages/idt-0.1.0-py3.8.egg-info
+[0.865s] running install_scripts
+[0.879s] Installing upload_mission script to /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/install/idt/lib/idt
+[0.879s] writing list of installed files to '/home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/build/idt/install.log'
+[0.912s] Invoked command in '/home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/idt' returned '0': PYTHONPATH=/home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/build/idt/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/install/idt/lib/python3.8/site-packages:${PYTHONPATH} _=/usr/bin/env /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/idt build --build-base /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/build/idt/build install --record /home/nicklas/Documents/DAS_kandidate/IDT_SilvanDrone/module11_time_to_fly/src/build/idt/install.log --single-version-externally-managed install_data
